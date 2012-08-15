@@ -1,0 +1,829 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;margin:0;padding:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;}
+
+body{
+	background:#fcc703;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+	a:hover{
+		text-decoration:underline;
+	}
+
+strong{
+	font-weight:bold;
+}
+	
+#holder{
+	height:100%;
+    position:fixed;
+    width:100%;
+    z-index:-20;
+}
+	#holderImg{
+		position:absolute;
+	}
+
+#wrapper{
+	display:block;
+	background:url(../images/background.jpg) top center no-repeat;
+	overflow:hidden;
+	width:100%;
+}
+
+.container{
+	display:block;
+	overflow:hidden;
+}
+
+.content_area{
+	display:block;
+	width:1260px;
+	margin:0 auto;
+}
+
+#header{
+	width:1260px;
+	height:208px;
+	margin:0;
+	display:block;
+}
+
+a#logo{
+	display:block;
+	background:url(../images/LogoSunsilk.png) no-repeat 0 0;
+	width:192px;
+	height:176px;
+	text-indent:-9999px;
+	outline:none;
+	margin:20px 0 0 534px;
+	float:left;
+}
+
+#content{
+	display:block;
+	width:1260px;
+	overflow:hidden;	
+}
+
+/* Alpha Landing */
+	.landingBox{
+		display:block;
+		background:url(../images/landingBG.png) no-repeat top center;
+		width:1032px;
+		height:627px;
+		overflow:hidden;
+		margin:0 auto 30px;
+	}
+		.landing{
+			display:block;
+			width:296px;
+			overflow:hidden;
+			float:right;
+			margin:0 69px 0 0;
+		}
+			.landingTitle{
+				display:block;
+				background:url(../images/title/hellodear.png) no-repeat 0 0;
+				width:245px;
+				height:43px;
+				margin:70px 0 0 2px;
+				text-indent:-9999px;
+			}
+			.standfirst{
+				margin:40px 0 40px;
+				text-align:center;
+				color:#5b2c04;
+				font-weight:bold;
+				font-size:16px;
+			}
+			.landingDesc{
+				text-align:center;
+				color:#5b2c04;
+				font-size:14px;
+				margin:0 0 20px;
+			}
+				.fbBtn{
+					display:block;
+					background:url(../images/fb_like.png) no-repeat 0 0;
+					width:255px;
+					height:56px;
+					margin:0 auto
+				}
+					.fbBtn:hover{
+						background:url(../images/fb_like.png) no-repeat 0 -56px;
+					}
+/* Omega Landing */
+
+/* Alpha Profile */
+	.profileBox{
+		background:url(../images/profileBG.png) no-repeat 0 0;
+		width:796px;
+		height:552px;
+		margin:0 auto;
+		display:block;
+		overflow:hidden;
+	}
+		.profile{
+			width:616px;
+			margin:0 auto;
+			display:block;
+		}
+		.profileTitle{
+			margin:0 auto 40px;
+			background:url(../images/title/yourprofile.png) no-repeat 0 0;
+			width:523px;
+			height:55px;
+			display:block;
+			text-indent:-9999px;
+		}
+		.profileLeft{
+			float:left;
+			display:block;
+			width:138px;
+			height:146px;
+		}
+		.profileRight{
+			font-size:12px;
+			line-height:18px;
+			display:block;
+			width:424px;
+			float:right;
+			color:#755c36;
+		}
+		.profileForm{
+			display:block;
+			width:424px;
+			margin:20px 0 0;
+			overflow:hidden;
+		}
+			.profileForm input[type="text"]{
+				height:40px;
+				font-size:16px;
+				line-height:40px;
+				padding:0 10px;
+				width:404px;
+				border:none;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				margin:0 0 30px;
+				
+			}
+			.phoneForm input[type="text"]{
+				height:40px;
+				font-size:16px;
+				line-height:40px;
+				padding:0 10px;
+				width:324px;
+				border:none;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+			}
+			.phonecode{
+				height:40px;
+				width:80px;
+				display:block;
+				line-height:40px;
+				font-size:16px;
+				float:left;
+				text-align:center;
+			}
+			input[type="submit"].correctandsubmit{
+				background:url(../images/correctandsubmitBtn.png) no-repeat 0 0;
+				width:189px;
+				height:44px;
+				border:none;
+				float:right;
+				cursor:pointer;
+			}
+				input[type="submit"].correctandsubmit:hover{
+					background:url(../images/correctandsubmitBtn.png) no-repeat 0 -44px;
+=				}
+			.termsandcondition{
+				display:block;
+				margin:0 0 20px;
+				font-size:14px;
+				color:#755c36;
+			}
+				.termsandcondition a{
+					text-decoration:underline;
+				}
+/* Omega Profile */
+
+/* Alpha Profile Tab */
+	.profileTab{
+		display:block;
+		width:209px;
+		height:87px;
+		float:right;
+		background:url(../images/profileTabBG.png) no-repeat 0 0;
+		margin:40px 150px 0 0;
+		position:relative;
+	}
+		.profileTabImg{
+			float:left;
+			display:block;
+			width:87px;
+			height:87px;
+		}
+			.profileTabImg img{
+				display:block;
+				width:77px;
+				height:77px;
+				-webkit-border-radius: 39px;
+				-moz-border-radius: 39px;
+				border-radius: 39px;
+				margin:6px 4px 5px;
+				overflow:hidden;
+			}
+		.profileTabRight{
+			float:right;
+			width:122px;
+			display:block;
+		}
+			.profileTabRightTop, .profileTabRightBot{
+				text-align:center;
+				width:117px;
+				margin:0 5px 0 0;
+			}
+			.signOut{
+				background:url(../images/signOutBtn.png) no-repeat 0 0;
+				width:67px;
+				height:22px;
+				display:block;
+				margin:0 auto;
+				text-indent:-9999px;
+				outline:none;
+			}
+			.profileTabRightBot h2{
+				color:#fdd203;
+				font-size:13px;
+				margin:5px 0 10px;
+				font-weight:bold;
+				display:block;
+				overflow:hidden;
+			}
+			.profileTabRightBot p{
+				color:#fdd203;
+				font-size:10px;
+				display:block;
+				overflow:hidden;
+			}
+
+/* Omega Profile Tab */
+
+/* Alpha Verify */
+	.verifyBox{
+		display:block;
+		background:url(../images/verifyBG.png) no-repeat top center;
+		width:990px;
+		height:298px;
+		overflow:hidden;
+		margin:40px auto 220px;
+	}
+	.verifyInvalidBox{
+		display:block;
+		background:url(../images/verifyinvalidBG.png) no-repeat top center;
+		width:990px;
+		height:347px;
+		overflow:hidden;
+		margin:40px auto 171px;
+	}
+	.verifyThanksBox{
+		display:block;
+		background:url(../images/verifythxBG.png) no-repeat top center;
+		width:990px;
+		height:256px;
+		overflow:hidden;
+		margin:40px auto 171px;
+	}
+		.verify{
+			display:block;
+			margin:0 auto;
+			width:621px;
+			overflow:hidden;
+		}
+		.verifyThanks{
+			display:block;
+			margin:0 auto;
+			width:636px;
+			overflow:hidden;
+		}
+			.verifyTitle{
+				display:block;
+				background:url(../images/title/yourverificationnumber.png) no-repeat 0 0;
+				width:570px;
+				height:40px;
+				text-indent:-9999px;
+				margin:3px auto 24px;
+			}
+			.verifyInvalidTitle{
+				display:block;
+				background:url(../images/title/invalidverificationnumber.png) no-repeat 0 0;
+				width:621px;
+				height:40px;
+				text-indent:-9999px;
+				margin:3px auto 24px;
+			}
+			.verifyThanksTitle{
+				display:block;
+				background:url(../images/title/thankyou.png) no-repeat 0 0;
+				width:255px;
+				height:41px;
+				text-indent:-9999px;
+				margin:3px auto 24px;
+			}
+			.verifyLeft{
+				display:block;
+				width:138px;
+				height:143px;
+				overflow:hidden;
+				float:left;
+				margin:0 0 0 20px;
+			}
+				.proPic{
+					display:block;
+					overflow:hidden;	
+					-webkit-border-radius: 10px;
+					-moz-border-radius: 10px;
+					border-radius: 10px;
+				}
+			.verifyLeftThanks{
+				display:block;
+				width:138px;
+				overflow:hidden;
+				float:left;
+				margin:0 0 0 50px;
+			}
+			.verifyRight{
+				display:block;
+				float:right;
+				width:400px;
+				overflow:hidden;
+				margin:0 19px 0 0;
+			}
+			.verifyRightThanks{
+				display:block;
+				float:right;
+				width:356px;
+				overflow:hidden;
+				margin:0 38px 0 0;
+			}
+				.verifyRightTop{
+					height:138px;
+					display:block;
+					overflow:hidden;
+					color:#755c36;
+					margin:0 0 25px;
+				}
+				.verifyRightThanksTop{
+					height:77px;
+					display:block;
+					overflow:hidden;
+					color:#755c36;
+					margin:0 0 25px;
+				}
+				.verifyInvalidRightTop{
+					height:179px;
+					display:block;
+					overflow:hidden;
+					color:#755c36;
+					margin:0 0 30px;
+				}
+					.verifyRightTop p, .verifyInvalidRightTop p{
+						margin:0 0 10px;
+					}
+				 input[type="text"].verifyTxt{
+					display:block;
+					background:url(../images/verifyTxtBox.jpg) no-repeat 0 0;
+					width:53px;
+					height:54px;
+					margin:0 10px 0 0;
+					text-align:center;
+					font-size:28px;
+					font-weight:bold;
+					border:none;
+					float:left;
+				}
+				.verifyResend{
+					background:url(../images/verifyResend.png) no-repeat 0 0;
+					width:233px;
+					height:41px;
+					display:block;
+					float:left;
+				}
+					.verifyResend{
+						background:url(../images/verifyResend.png) no-repeat 0 -41px;
+					}
+				.verifyStart{
+					background:url(../images/verifyStart.png) no-repeat 0 0;
+					width:129px;
+					height:41px;
+					display:block;
+					float:right;
+				}
+					.verifyStart:hover{
+						background:url(../images/verifyStart.png) no-repeat 0 -41px;
+					}
+				.verifySubmit{
+					background:url(../images/verifySubmit.png) no-repeat 0 0;
+					width:109px;
+					height:41px;
+					display:block;
+					float:right;
+				}
+					.verifySubmit:hover{
+						background:url(../images/verifySubmit.png) no-repeat 0 -41px;
+					}
+
+/* Omega Verify */
+
+
+/* Alpha Create Story Page */
+	.gameStoryBox{
+		background:url(../images/game_cs_BG.png) no-repeat 0 0;
+		display:block;
+		width:1030px;
+		height:529px;
+		margin:0 auto 40px;
+	}
+		.gameStory{
+			width:885px;
+			display:block;
+			margin:0 auto;
+		}
+			.gameStoryTitle{
+				background:url(../images/title/writeyoursmartyellowstory.png) no-repeat 0 0;
+				display:block;
+				width:688px;
+				height:53px;
+				margin:0 auto 24px;
+				text-indent:-9999px;
+			}
+			.gameStoryLeft{
+				float:left;
+				display:block;
+				margin:0 14px 0 10px;
+				background:url(../images/camera.png) no-repeat 0 0;
+				width:492px;
+				height:281px;
+			}
+			.gameStoryRight{
+				float:right;
+				display:block;
+				width:368px;
+				overflow:hidden;
+			}
+				.gameStoryRightTop{
+					margin:0 0 20px;
+					color:#755c36;
+				}
+				.gameStoryRightBot textarea{
+					width:348px;
+					border-radius:10px;
+					padding:10px;
+					font-family:Arial, Helvetica, sans-serif;
+					font-size:14px;
+					line-height:18px;
+					margin:0 0 30px;
+					color:#755c36;
+				}
+				input[type="submit"].storysubmit{
+					background:url(../images/verifySubmit.png) no-repeat 0 0;
+					width:109px;
+					height:41px;
+					display:block;
+					float:right;
+					border:none;
+					cursor:pointer;
+				}
+					input[type="submit"].storysubmit:hover{
+						background:url(../images/verifySubmit.png) no-repeat 0 -41px;
+					}
+
+/* Omega Create Story Page  */
+
+/* Alpha Notification  */
+	.notificationBox{
+		display:block;
+		background:url(../images/gameEndPageBG.png) no-repeat 0 0;
+		width:600px;
+		height:509px;
+		margin:0 auto;
+	}
+		.notification{
+			display:block;
+			width:482px;
+			margin:0 auto;
+			overflow:hidden;
+			font-size:12px;
+			text-align:center;
+			color:#755c36;
+		}
+			.notificationTitle{
+				display:block;
+				background:url(../images/title/thankyou_big.png) no-repeat 0 0;
+				width:449px;
+				height:56px;
+				margin:0 auto 30px;
+				text-indent:-9999px;
+			}
+			.toobadTitle{
+				display:block;
+				background:url(../images/title/toobad.png) no-repeat 0 0;
+				width:352px;
+				height:69px;
+				margin:0 auto 17px;
+				text-indent:-9999px;
+			}
+			a.homeBtn{
+				display:block;
+				background:url(../images/homeBtn.png) no-repeat 0 0;
+				width:109px;
+				height:44px;
+				margin:25px auto 50px;
+				text-indent:-9999px;
+				outline:none;
+			}
+				a.homeBtn:hover{
+					background:url(../images/homeBtn.png) no-repeat 0 -44px;
+				}
+			.share{
+				display:block;
+				width:186px;
+				margin:20px auto 0;
+				overflow:hidden;
+			}
+				.shareTw, .shareFb{
+					background:url(../images/shareTwitter.png) no-repeat 0 0;
+					width:85px;
+					height:29px;
+					display:block;
+					text-indent:-9999px;
+					margin: 0 16px 0 0;
+					float:left;
+				}
+				.shareFb{
+					background:url(../images/shareFacebook.png) no-repeat 0 0;
+					margin:0;
+					float:left;
+				}
+
+
+/* Omega Notification  */
+
+
+/* Alpha Inside */
+	.insideBox{
+		display:block;
+		background:url(../images/insideBG.png) no-repeat top center;
+		width:967px;
+		height:523px;
+		overflow:hidden;
+		margin:0 auto 30px;
+	}
+		.inside{
+			display:block;
+			float:right;
+			margin:0 3px 0 0;
+			width:610px;
+			overflow:hidden;
+		}
+			.insideTop, .insideBot{
+				display:block;
+				overflow:hidden;
+				margin:0 0 50px;
+			}
+			.insideBot{
+				margin:0 0 0 40px;
+			}
+				.insideTitle{
+					display:block;
+					background:url(../images/title/playthegame.png) no-repeat 0 0;
+					width:354px;
+					height:62px;
+					margin:41px auto 0;
+					text-indent:-9999px;
+				}
+				.insideCtc{
+					display:block;
+					margin:10px 0 0 40px;
+				}
+					.insideCtcImg{
+						float:left;
+						margin:0 10px 0 0;
+					}
+					.insideCtcTxt{
+						display:block;
+						float:left;
+						width:290px;
+						font-size:14px;
+						line-height:19px;
+						color:#745a35;
+					}
+						.insideCtcTxt p{
+							margin:0 0 12px;
+						}
+					.insideCtcTitle{
+						display:block;
+						margin:10px 0 ;
+						text-indent:-9999px;
+						background:url(../images/title/sunsilkctc.png) no-repeat 0 0;
+						width:259px;
+						height:24px;
+					}
+					.playNowCtc{
+						display:block;
+						background:url(../images/playctc_btn.png) no-repeat 0 0;
+						width:179px;
+						height:42px;
+					}
+						.playNowCtc:hover{
+							background:url(../images/playctc_btn.png) no-repeat 0 -42px;
+						}
+			
+				.botColumn{
+					display:block;
+					float:left;
+					overflow:hidden;
+					width:255px;
+				}
+					.botImg{
+						float:left;
+						width:100px;
+						margin:0 10px 0 0;
+					}
+					.botTxt{
+						float:left;
+						width:145px;
+						color:#745a35;
+					}
+						.botTxt h3{
+							font-weight:bold;
+							color:#5b2c04;
+							margin:0 0 10px;
+						}
+						.insideBtn{
+							display:block;
+							background:url(../images/inside_brown_btn.png) no-repeat 0 0;
+							width:131px;
+							height:42px;
+							line-height:40px;
+							text-align:center;
+							font-size:14px;
+							font-weight:bold;
+							color:#FFF;
+						}
+							.insideBtn:hover{
+								background:url(../images/inside_brown_btn.png) no-repeat 0 -42px;
+								text-decoration:none;
+							}
+/* Omega Inside */
+
+/* Alpha How To */
+	.howtoContainer{
+		display:block;
+		background:url(../images/howto_bg.png) no-repeat top center;
+		width:1097px;
+		height:618px;
+		overflow:hidden;
+		margin:0 auto 30px;
+	}
+		.howtoContainer_box{
+			display:block;
+			width:967px;
+			overflow:hidden;
+			margin:30px 0 0 69px;
+		}
+			.stepcolumn_left, .stepcolumn_mid, .stepcolumn_right{
+				display:block;
+				width:305px;
+				float:left;
+			}
+			.stepcolumn_mid{
+				margin:0 26px;
+			}
+				.stepcolumn_text{
+					font-family:Arial, Helvetica, sans-serif;
+					display:table-cell;
+					vertical-align:middle;
+					text-align:center;
+					font-size:14px;
+					color:#5D2D05;
+					height:143px;
+					width:503px;
+				}
+			.startbtn_box{
+			
+			}
+			.startbtn{
+				display:block;
+				background:url(../images/start_btn.png) no-repeat 0 0;
+				width:161px;
+				height:43px;
+				outline:none;
+				text-indent:-9999px;
+				margin:0 auto;
+			}
+				.startbtn:hover{
+					background:url(../images/start_btn.png) no-repeat 0 -43px;
+				}
+/* Omega How To */
+
+/* Alpha Terms */
+	.termsBox{
+		background:url(../images/termsBG.png) no-repeat 0 bottom;
+		display:block;
+		width:924px;
+		height:563px;
+		margin:0 auto 70px;
+		overflow:hidden;
+	}
+		.terms{
+			display:block;
+			width:826px;
+			margin:0 auto;
+			overflow:hidden
+		}
+		.termsTitle{
+			display:block;
+			background:url(../images/title/terms&condition.png) no-repeat 0 0;
+			width:650px;
+			height:56px;
+			margin:0 auto 30px;
+			text-indent:-9999px;
+		}
+		.termsTxtCon{
+			display:block;
+			width:824px;
+			height:425px;
+			background:#FFF;
+			border:solid 1px #d5d6c8;
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;
+			overflow-y:scroll;
+			overflow-x:hidden;
+		}
+		.termsTxt{
+			width:704px;
+			padding:20px;
+			display:block;
+			font-size:14px;
+			color:#755c36;
+			line-height:20px;
+		}
+/* Omega Terms */
+
+.footer_container{
+	display:block;
+	width:100%;
+	overflow:hidden;
+	position:fixed;
+	bottom:0;
+	margin:0 auto;
+}
+#footer{
+	display:block;
+	height:55px;
+	width:960px;
+	padding:0 150px;
+	color:#FFF;
+	background:#2b2b28;
+	margin:0 auto;
+	line-height:55px;
+}
+	.footer_left{
+		font-size:13px;
+		float:left;
+		margin:0 0 0 26px;
+		font-family:'ArtifikaMedium';
+	}
+	.footer_left a{
+		color:#ffdc0c;
+	}
+		.footer_left a.white{
+			color:#fff;
+		}
+	.footer_right{
+		font-size:12px;
+		float:right;
+		margin:0 26px 0 0;
+	}
+		.follow{
+			background:url(../images/follow.jpg) no-repeat 0 0;
+			width:100px;
+			height:27px;
+			display:block;
+			margin:14px 0 0;
+			text-indent:-9999px;
+		}
